@@ -1,0 +1,132 @@
+
+
+/*Style.css is the file contains the css codes used to Edit different components in the project*/
+
+/* styling for the HTML */
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/*Root and public styling  */
+body,
+#root{
+  height:100vh;
+  margin: 0;
+}
+
+/* Font styling */
+body,
+input,
+select,
+textarea{
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header grid*/
+.grid-container{
+  display: grid;
+  grid-template-areas: "header"
+  "main"
+  "footer";
+  grid-template-rows:5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+/*header styling*/
+header{
+  grid-area: header;
+  background-color: rgb(6, 6, 7);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+/*styling for rowed componants*/
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Block Iteams styling*/
+.block {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 00.5rem;
+  border-radius: 0.5rem;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 30px;
+  
+}
+
+/*Minus Icon styling*/
+.MinusStyle{
+  color: red;
+  width:200%;
+  cursor: pointer;
+  margin-right:0.1rem;
+  padding: 0.2rem;
+}
+
+/*Minus Icon on Remove styling*/
+.MinusStyle .remove{
+  color: rgb(208, 255, 0);
+  width: 0.5rem;
+}
+
+/*Search Icon styling*/
+.searchBar .MdSerachStyle{
+  color: rgb(17, 17, 211);
+  width: 2rem;
+  cursor: pointer;
+  
+}
+
+/*Add Icon styling*/
+.addBar .addIconStyle{
+  color: rgba(23, 128, 165, 0.347);
+  width: 2rem;
+  cursor: pointer;
+  
+}
+
+/*user input styling*/
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+/* input placeholder Bars styling*/
+input::placeholder {
+  font-size: 0.9em;
+  font-weight: lighter;
+  color: #999;
+}
+
+/*Bars styling*/
+.SearchBar {
+  margin-right: 1%;
+}
+
+.AddBar {
+  margin-left: 1%;
+}
+
+.SearchBar,
+.AddBar
+ {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.SearchBar,
+.AddBar {
+  width: 49%;
+}
